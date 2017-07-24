@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+<!--		<link rel="stylesheet" href="vwHealthcareSystemDynamics.css"> -->
+	</head>
+	<body>
+
+<div id="HealthcareSystemDynamics-mainDiv">
+
+			<div id="HealthcareSystemDynamics-TABS" class="yui-navset yui-navset-top">
+				<ul class="yui-nav">
+					
+					
+					
+					
+				<li id="HealthcareSystemDynamics-TAB0" class="selected" title="active"><a href="#HealthcareSystemDynamics-TAB0"><em>Specify Data</em></a></li><li id="HealthcareSystemDynamics-TAB1"><a href="#HealthcareSystemDynamics-TAB1"><em>View Results</em></a></li><li id="HealthcareSystemDynamics-TAB2"><a href="#HealthcareSystemDynamics-TAB2"><em>Plugin Help</em></a></li><li id="HealthcareSystemDynamics-HSDHome" onclick="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDIntro');"><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDIntro');"><em>HSD Home</em></a></li></ul>
+				<div class="yui-content" id="HealthcareSystemDynamics-CONTENT" style="height: 835px;">
+					<div class="HealthcareSystemDynamics-Main">
+						<div class="HealthcareSystemDynamics-MainContent" style="height: 633px;">
+							<div class="HealthcareSystemDynamics-MainContentPad">
+							<div style="width:500px;">
+								<div style="font-size:18px;color:#369;font-weight:bold;">Healthcare System Dynamics: Fact Count</div>
+								<p>This plugin graphs the "fact count" distribution of one or more patient sets.
+									Fact count is the total number of diagnoses, procedures, medications, test results, etc., in a patient's medical record.
+									It is a measure of the amount of interaction the patient has had with the healthcare system.
+									When comparing patient cohorts, it is important to control for fact count, in the same way that one might control for patient age, sex, or race.
+								</p>
+
+									<div>Drop one Patient Set on the input box below to act as the baseline population. Fact count percentiles for this patient set will be depicted as a series of parallel curves.</div>
+									<div class="droptrgtlbl">Baseline Patient Set:</div>
+									<div class="droptrgt SDX-PRS" id="HealthcareSystemDynamics-prsDropControl">
+										<div class="psDropMsg">Drop the Control Patient Set here</div>
+									</div>
+
+									<div style="margin-top:20px;">Drop one or more comparison Patient Sets to be plotted over the baseline population's fact count percentile curves.</div>
+									<div class="droptrgtlbl">Comparison Patient Set(s):</div>
+									<div class="droptrgt SDX-PRS" id="HealthcareSystemDynamics-prsDropExperiment">
+										<div class="psDropMsg">Drop one or more Experiement Patient Sets here</div>
+									</div>
+									<div id="DeleteMsg">Click a Patient Set to remove it from the lists.</div>
+
+								<div style="margin-top:15px;">Select from the display options below, and then click the View Results tab.</div>
+
+									<div class="droptrgtlbl">Age Resolution:</div>
+									<div class="droptrgt SDX-PRS">
+										<input type="radio" name="AgeBucketSize" value="10yrs" checked="checked"> 10 Year Interval &nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="AgeBucketSize" value="1yrs"> 1 Year Interval
+									</div>
+
+									<div class="droptrgtlbl">Fact Count Resolution:</div>
+									<div class="droptrgt SDX-PRS">
+										<input type="radio" name="FactCountBuckets" value="10" checked="checked"> 10 Buckets &nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="FactCountBuckets" value="100"> 100 Buckets
+									</div>
+
+
+									<div class="droptrgtlbl">Age &amp; Fact Count Histograms:</div>
+									<div class="droptrgt SDX-PRS">
+										<input type="radio" name="HistogramValues" value="Actual" checked="checked"> Actual Counts &nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="HistogramValues" value="Normalize"> Density
+									</div>
+
+
+
+									<div class="droptrgtlbl">Fact Count Scale:</div>
+									<div class="droptrgt SDX-PRS">
+										<input type="radio" name="YAxisScale" value="linear" checked="checked"> Linear &nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="YAxisScale" value="logrithmic"> Logrithmic
+									</div>
+
+									<div class="droptrgtlbl">Other Options:</div>
+									<div class="droptrgt SDX-PRS">
+										<input type="checkbox" name="SmoothLines" value="Y" checked="checked"> Smooth the fact count percentile curves using a 3-point running average<br>
+										<input type="checkbox" name="ShowPatients" value="Y" checked="checked"> Show the age and fact count (points) for each patient<br>
+										<input type="checkbox" name="ShowMean" value="Y" checked="checked"> Show the mean age and fact count mean (diamonds) for each patient set<br>
+										<input type="checkbox" name="ShowStDev" value="Y" checked="checked"> Show the standard deviation (large ovals) for each patient set
+									</div>
+									<p></p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="HealthcareSystemDynamics-Main yui-hidden">
+						<div class="HealthcareSystemDynamics-MainContent" style="height: 633px;">
+							<div class="HealthcareSystemDynamics-MainContentPad">
+								<div style="font-size:18px;color:#369;font-weight:bold;margin:4px 4px 28px">Healthcare System Dynamics: Fact Count</div>
+							<div class="results-directions">Please return to the "Specify Data" tab and select a Patient Set.</div>
+							<div class="results-working" style="display:none;">Please wait while the data is being retrieved...</div>
+								<ul class="hsd-tabs" style="display:none;">
+									<li class="tab selected" data-tabnum="1">Age Histogram</li>
+									<li class="tab" data-tabnum="2">Fact Count Histogram</li>
+									<li class="tab" data-tabnum="3">Fact Count by Age</li>
+									<li class="last">&nbsp;</li>
+								</ul>
+								<div class="results-finished" data-results-disp="1" style="display:none;">
+									<div class="results-figureTitle" style="margin-top:15px;width:800px;">
+										<div style="font-size:16px;font-weight:bold;text-align:center;margin-bottom:10px;">Age Histogram</div>
+									</div>
+								</div>
+								<div class="results-finished" data-results-disp="2" style="display:none;">
+									<div class="results-figureTitle" style="margin-top:15px;width:800px;">
+										<div style="font-size:16px;font-weight:bold;text-align:center;margin-bottom:10px;">Fact Count Histogram</div>
+									</div>
+								</div>
+								<div class="results-finished" data-results-disp="3" style="display:none;">
+									<div class="results-figureTitle" style="margin-top:15px;width:800px;">
+										<div style="font-size:16px;font-weight:bold;text-align:center;margin-bottom:10px;">Fact Count Distribution by Age</div>
+										<div>Lines = fact count percentiles of the baseline population; small circles = individual patients in the comparison groups; diamonds = the mean age and fact count of the comparison groups; and, large ovals = the standard deviation of the age and fact count of the comparison groups.</div>
+									</div>
+								</div>
+
+
+								<div class="results-legend-frame" style="width: 700px; padding-left: 80px; margin-bottom: 15px; display: none;">
+									<center>
+									<table><tbody><tr><td style="text-align:left;"><div class="results-legend" style="display:none;"></div></td></tr></tbody></table>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="HealthcareSystemDynamics-Main yui-hidden">
+						<div class="HealthcareSystemDynamics-MainContent" style="height: 633px;">
+							<div class="HealthcareSystemDynamics-MainContentPad">
+								<div style="font-size:18px;color:#369;font-weight:bold;margin-bottom:15px;">Healthcare System Dynamics: Fact Count</div>
+								<hr size="1" noshade="">
+								<h2>Introduction</h2>
+								This plugin is part of a collection of data analysis and visualization tools called Healthcare System Dynamics (HSD). Click the "HSD Home" tab to read about HSD and the available plugins.
+								<h2>More Information about HSD</h2>
+								<a href="http://HealthcareSystemDynamics.org" target="_blank">http://HealthcareSystemDynamics.org</a>
+							</div>
+						</div>
+					</div>
+				<div class="yui-hidden"></div></div>
+			</div>
+
+
+		</div></div>
+
+	</body>
+</html>

@@ -1,0 +1,56 @@
+/*** CSS for main plugin wrapper ***/
+
+DIV#HSDIntro-mainDiv {
+	padding: 0px;
+}
+
+
+
+/*** CSS for tab background ***/
+
+DIV#HSDIntro-TABS DIV.yui-content {
+	background: #FFF;
+}
+DIV#HSDIntro-TABS DIV.HSDIntro-MainContent {
+	background:#FFF;
+	border:solid #63758C;
+	border-width:1px 0;
+	overflow:auto;
+	height: 100% !important;
+}
+DIV#HSDIntro-TABS DIV.HSDIntro-MainContentPad {
+	padding:10px 10px;
+}
+
+
+
+
+/*** CSS for the title on each tab ***/
+div.HSDIntro-MainContent div.HSDIntro-PageTitle {
+	font-size: 18px;
+	color: #369;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+div.HSDIntro-MainContent div.HSDIntro-PageTitle span {
+	vertical-align: top;
+	line-height: 34px;
+	display: inline-block;
+}
+
+
+/*** CSS for the content of each tab ***/
+div.HSDIntro-MainContent div.HSDIntro-PageContent {
+	width: 700px;
+}
+
+/*** CSS for the content of visualization launch button ***/
+div.HSDIntro-MainContent div.HSDIntro-Launcher {
+	float: right;
+}
+div.HSDIntro-MainContent div.HSDIntro-Launcher button {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 10px;	
+}

@@ -1,0 +1,278 @@
+/*** CSS for main plugin wrapper ***/
+
+DIV#HSDTime-mainDiv {
+	padding: 0px;
+}
+
+
+
+/*** CSS for tab background ***/
+
+DIV#HSDTime-TABS DIV.yui-content {
+	background: #FFF;
+}
+DIV#HSDTime-TABS DIV.HSDTime-MainContent {
+	background:#FFF;
+	border:solid #63758C;
+	border-width:1px 0;
+	overflow:auto;
+	height: 100% !important;
+}
+DIV#HSDTime-TABS DIV.HSDTime-MainContentPad {
+	padding:10px 10px;
+}
+
+
+
+
+/*** CSS for the Specify Data tab ***/
+
+DIV#HSDTime-mainDiv DIV.droptrgtlbl {
+	text-align:right;
+	font-weight:bold;
+	color:#666;
+	margin:15px 10px 0px 0px;
+	float:left;
+}
+DIV#HSDTime-mainDiv DIV.droptrgt {
+	padding: 5px 10px;
+	background: #DEEBEF;
+	text-align:left;
+	border: 1px solid #63758C;
+	width:480px;
+	overflow:hidden;
+	clear: both;
+}
+
+DIV#HSDTime-PRSDROP DIV.psItem {
+	padding: 5px 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
+
+DIV#HSDTime-PRSDROP DIV.wHover:hover {
+	background: #F3C9C9;
+	cursor: pointer;
+}
+
+DIV#HSDTime-mainDiv #DeleteMsg {
+	font-size: 11px;
+	width: 380px;
+	text-align: center;
+}
+
+
+
+DIV#HSDTime-mainDiv #segmentorX input[type="radio"], DIV#HSDTime-mainDiv #segmentorY input[type="radio"] {
+	top: 3px;
+	position: relative;
+}
+
+DIV#HSDTime-mainDiv #segmentorX span, DIV#HSDTime-mainDiv #segmentorY span {
+	margin-left: 4px;
+}
+
+
+/*** CSS for the View Results tab ***/
+
+.HSDTime-SVG {
+	border-top: 1px solid #000;
+}
+
+.HSDTime-SVG text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+.HSDTime-SVG .label {
+  fill: black;
+  font: 14px sans-serif;
+  text-anchor: end;
+}
+.bar:hover {
+  fill: brown;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+
+
+DIV#HSDTime-CONTENT div div div div.title {
+	width: 700px;
+	xborder:1px solid #000;
+	padding-left: 80px;
+	padding-bottom:10px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+
+DIV#HSDTime-TABS DIV.results-directions {
+	padding: 10px;
+	text-align:left;
+}
+DIV#HSDTime-TABS DIV.results-working {
+	margin:10px;
+	text-align:left;
+}
+DIV#HSDTime-TABS DIV.results-finished .intro {
+	margin:10px 10px 15px 10px;
+}
+DIV#HSDTime-TABS DIV.results-finished .resultLV {
+	margin:10px 0px 15px 10px;
+}
+DIV#HSDTime-TABS DIV.results-finished .resultLbl {
+	margin-right:10px;
+	font-weight:bold;
+	font-size:13px;
+	color:#42558C;
+	float:left;
+}
+DIV#HSDTime-TABS DIV.results-finished .resultVal {
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables .demcatTitle {
+	margin:0px 10px;
+	font-weight:bold;
+	font-size:13px;
+	color:#42558C;
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables TABLE {
+	margin:1px 10px 15px 10px;
+	border-collapse:collapse;
+	border:solid 1px #63758C;
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables TABLE TH {
+	border:solid 1px #63758C;
+	background-color:#CEDBEF;
+	padding:5px;
+	text-align:center;
+	width:100px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables TABLE TD {
+	border:solid 1px #63758C;
+	background-color:#DEEBEF;
+	padding:5px;
+	text-align:center;
+	width:50px;
+	white-space:nowrap;
+	overflow:hidden;
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables .barTD {
+	border:none;
+	background-color:#FFE;
+	padding:0px;
+	width:200px;
+	text-align:left;
+}
+DIV#HSDTime-TABS DIV.results-finished .demTables .bar {
+	border:none;
+	background-color:#FCC;
+	height:22px;
+	padding:0px;
+	margin:0px;
+	overflow:hidden;
+}
+
+DIV.HSDTime-MainContent DIV.results-legend {
+	border: 1px solid #000;
+	padding: 10px 20px;
+	margin-top:15px;
+}
+
+DIV.HSDTime-MainContent DIV.xresults-legend {
+    left: 50%;
+    margin-right: -50%;
+    margin-top: 20px;
+    transform: translate(50%,0);
+    border: 1px solid black;
+    padding: 12;
+    float: left;
+}
+
+
+
+
+/*** CSS for the Plugin Help tab ***/
+
+DIV#HSDTime-TABS H1 {
+	margin:0 0 10px 0;
+	font-size:16px;
+	color:#42558C;
+	font-weight:bold;
+}
+DIV#HSDTime-TABS H2 {
+	margin:10px 0 10px 0;
+	font-size:13px;
+	color:#42558C;
+	font-weight:bold;
+}
+DIV#HSDTime-TABS HR {
+	margin:0;
+}
+
+
+
+/*** CSS for tabs in results page ***/
+#HSDTime-CONTENT .hsd-tabs {
+    list-style-type: none;
+    margin: 0px 0px 16px;
+    padding: 0;
+}
+
+#HSDTime-CONTENT .hsd-tabs li:first-child {
+    margin-left: 8px;
+}
+
+#HSDTime-CONTENT .hsd-tabs li {
+    float: left;
+    background: #ccc;
+    height: 32px;
+    box-sizing: border-box;
+}
+
+#HSDTime-CONTENT ul.hsd-tabs li.tab {
+  cursor: pointer;
+  margin-right: 6px;
+  padding: 10px 24px;
+  border: #ccc solid 1px;
+  font-size: 14px;
+  line-height: 14px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ededed+0,ffffff+100 */
+  background: #ededed; /* Old browsers */
+  background: -moz-linear-gradient(top, #ededed 0%, #ffffff 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ededed 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ededed 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+#HSDTime-CONTENT ul.hsd-tabs li.tab            { color: #3366cc; }
+
+#HSDTime-CONTENT ul.hsd-tabs li.tab.selected   { color: #000; cursor: default;}
+
+#HSDTime-CONTENT ul.hsd-tabs li.tab.selected {
+  background: #fff !important;
+  border-bottom: none !important;
+}
+
+#HSDTime-CONTENT ul.hsd-tabs li.first {
+  width: 8px;
+  background: #fff;
+  border-bottom: #ccc solid 1px;
+}
+
+#HSDTime-CONTENT ul.hsd-tabs li.last {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  float: none;
+}
