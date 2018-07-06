@@ -22,7 +22,7 @@ DIV#HSDIntro-TABS DIV.HSDIntro-MainContentPad {
 	padding:10px 10px;
 }
 
-
+DIV#HSDIntro-TABS ul li {padding-top: 0px;}
 
 
 /*** CSS for the title on each tab ***/

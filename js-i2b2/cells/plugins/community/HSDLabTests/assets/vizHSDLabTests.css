@@ -1,0 +1,103 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+DIV.HSDLabTests-MainContent DIV.results-finished {
+	margin-top: 20px;
+}
+
+.HSDLabTests-MainContent svg {
+  font: 14px 'Open Sans';
+}
+
+
+
+/*Bars (rect)*/
+
+#HSDLabTests-CONTENT .bar:hover {
+    fill: black !important;
+}
+
+#HSDLabTests-CONTENT .bar:hover text{
+    cursor: default;
+}
+
+.HSDLabTests-MainContent .b {
+    stroke: #444;
+    stroke-width: 1;
+    fill: lightgrey;
+}
+
+.HSDLabTests-MainContent rect.highlighted {
+    stroke-width: 2;
+}
+
+.HSDLabTests-MainContent rect.selected {
+    stroke-width: 3;
+}
+
+
+
+
+
+
+.HSDLabTests-MainContent .legend-container {
+    display: block;
+ /*   margin-left: calc(50% - 540px + (.769230769% * 2));*/
+    margin-right: auto;
+    font-size: 19px;
+    margin-left: 75px;
+}
+
+
+.HSDLabTests-MainContent .d3-tip p {
+  line-height: 1em !important;
+  margin: 3px;
+}
+
+
+.HSDLabTests-MainContent .legend-title {
+    color: #000;
+    display: block;
+    text-align: center;
+    text-anchor: end;
+    width: 300px;
+}
+
+.HSDLabTests-MainContent .legend-item {
+    width: 300px;
+    margin-right: 30px;
+    height: 100px;
+    float: left;
+}
+
+
+
+.HSDLabTests-MainContent .axis text,
+.HSDLabTests-MainContent .l2 {
+    stroke-width: .035em;
+    cursor: pointer;
+    color: #000;
+    font: 15px sans-serif;
+}
+
+
+.HSDLabTests-MainContent .axis line,
+.HSDLabTests-MainContent .axis path {
+    /*stroke-dasharray: 5, 5;*/
+    fill: none;
+    stroke: #666;
+    
+}
+.HSDLabTests-MainContent .axis .minor line,
+.HSDLabTests-MainContent .axis .minor path {
+  stroke: #666;
+  stroke-dasharray: 5, 5;
+}
+
+
+
+.HSDLabTests-MainContent .axis .tick line {
+	opacity: 1;
+	stroke: #666;
+	shape-rendering: initial;
+}

@@ -1,0 +1,103 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+DIV.HSDLabTestsSvr-MainContent DIV.results-finished {
+	margin-top: 20px;
+}
+
+.HSDLabTestsSvr-MainContent svg {
+  font: 14px 'Open Sans';
+}
+
+
+
+/*Bars (rect)*/
+
+#HSDLabTestsSvr-CONTENT .bar:hover {
+    fill: black !important;
+}
+
+#HSDLabTestsSvr-CONTENT .bar:hover text{
+    cursor: default;
+}
+
+.HSDLabTestsSvr-MainContent .b {
+    stroke: #444;
+    stroke-width: 1;
+    fill: lightgrey;
+}
+
+.HSDLabTestsSvr-MainContent rect.highlighted {
+    stroke-width: 2;
+}
+
+.HSDLabTestsSvr-MainContent rect.selected {
+    stroke-width: 3;
+}
+
+
+
+
+
+
+.HSDLabTestsSvr-MainContent .legend-container {
+    display: block;
+ /*   margin-left: calc(50% - 540px + (.769230769% * 2));*/
+    margin-right: auto;
+    font-size: 19px;
+    margin-left: 75px;
+}
+
+
+.HSDLabTestsSvr-MainContent .d3-tip p {
+  line-height: 1em !important;
+  margin: 3px;
+}
+
+
+.HSDLabTestsSvr-MainContent .legend-title {
+    color: #000;
+    display: block;
+    text-align: center;
+    text-anchor: end;
+    width: 300px;
+}
+
+.HSDLabTestsSvr-MainContent .legend-item {
+    width: 300px;
+    margin-right: 30px;
+    height: 100px;
+    float: left;
+}
+
+
+
+.HSDLabTestsSvr-MainContent .axis text,
+.HSDLabTestsSvr-MainContent .l2 {
+    stroke-width: .035em;
+    cursor: pointer;
+    color: #000;
+    font: 15px sans-serif;
+}
+
+
+.HSDLabTestsSvr-MainContent .axis line,
+.HSDLabTestsSvr-MainContent .axis path {
+    /*stroke-dasharray: 5, 5;*/
+    fill: none;
+    stroke: #666;
+    
+}
+.HSDLabTestsSvr-MainContent .axis .minor line,
+.HSDLabTestsSvr-MainContent .axis .minor path {
+  stroke: #666;
+  stroke-dasharray: 5, 5;
+}
+
+
+
+.HSDLabTestsSvr-MainContent .axis .tick line {
+	opacity: 1;
+	stroke: #666;
+	shape-rendering: initial;
+}

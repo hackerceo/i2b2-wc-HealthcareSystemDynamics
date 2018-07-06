@@ -40,24 +40,38 @@ i2b2.hive.tempCellsList = [
 		   forceLoading: true,
 		   forceConfigMsg: { params: [] }
 		},
-		{ code:	"HealthcareSystemDynamics",
-		   forceLoading: true,
-		   forceConfigMsg: { params: [] },
-		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
-		   forceDir: "cells/plugins/community"
-		},
-		{ code:	"HealthcareSystemDynamicsTime",
-		   forceLoading: true,
-		   forceConfigMsg: { params: [] },
-		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
-		   forceDir: "cells/plugins/community"
-		},
+// -------------------------------------------		
 		{ code:	"HSDIntro",
 		   forceLoading: true,
 		   forceConfigMsg: { params: [] },
 		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
 		   forceDir: "cells/plugins/community"
 		},
+		{ code:	"HSDFactCounts",
+		   forceLoading: true,
+		   forceConfigMsg: { params: [] },
+		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
+		   forceDir: "cells/plugins/community"
+		},
+		{ code:	"HSDLabTests",
+		   forceLoading: true,
+		   forceConfigMsg: { params: [] },
+		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
+		   forceDir: "cells/plugins/community"
+		},
+		{ code:	"HSDFactCountsSvr",
+		   forceLoading: true,
+		   forceConfigMsg: { params: [] },
+		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
+		   forceDir: "cells/plugins/community"
+		},
+		{ code:	"HSDLabTestsSvr",
+		   forceLoading: true,
+		   forceConfigMsg: { params: [] },
+		   roles: [ "DATA_LDS", "DATA_DEID", "DATA_PROT" ],
+		   forceDir: "cells/plugins/community"
+		}
+// -------------------------------------------		
 	];
 // ================================================================================================== //
 //     ^^

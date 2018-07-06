@@ -1,11 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<body>
 		<div id="HSDIntro-mainDiv">
 
 			<div id="HSDIntro-TABS" class="yui-navset">
 				<ul class="yui-nav">
-					<li id="HSDIntro-TAB0" class="selected"><a href="http://weber.hms.harvard.edu/HealthcareSystemDynamics/i2b2dev/webclient/js-i2b2/cells/plugins/community/HSDIntro/assets/injected_screens.html#HSDIntro-TAB0"><em>Introduction</em></a></li>
-					<li id="HSDIntro-TAB1"><a href="http://weber.hms.harvard.edu/HealthcareSystemDynamics/i2b2dev/webclient/js-i2b2/cells/plugins/community/HSDIntro/assets/injected_screens.html#HSDIntro-TAB1"><em>About Us</em></a></li>
+					<li id="HSDIntro-TAB0" class="selected"><a href="#HSDIntro-TAB0"><em>Introduction</em></a></li>
+					<li id="HSDIntro-TAB1"><a href="#HSDIntro-TAB1"><em>About Us</em></a></li>
 				</ul>
 				<div class="yui-content" id="HSDIntro-CONTENT">
 <!-- Introduction Page -->
@@ -18,10 +19,12 @@
 										<span>Healthcare System Dynamics: Introduction</span>
 									</div>
 									<p>Biomedical Big Data, such as electronic health records (EHR) and administrative claims, are records of patients' interactions with the healthcare system. For example, a patient always has a white blood cell (WBC) count, but it only appears in an EHR when the patient seeks medical care and a physician thinks the patient needs the test. We created data visualizations to show that these interactions leave a signal in observational clinical data that contains valuable information, which could benefit biomedical research, clinical care, and health care policy. For more information, visit our website at:</p>
-									<p><a href="http://healthcaresystemdynamics.org/" target="_blank">Visualizing healthcare system dynamics in biomedical big data</a></p>
+									<p><a href="http://HealthcareSystemDynamics.org" target="_blank">Visualizing healthcare system dynamics in biomedical big data</a></p>
 									<p><b>List of HSD Plugins</b></p>
-									<p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin(&#39;HealthcareSystemDynamics&#39;);">Fact Count</a> - Fact Count is the total number of data points (e.g., diagnoses, procedures, laboratory test results, etc.) a patient has. It is a measure of the amount of interaction patients have had with the healthcare system. Patients with low fact counts might be healthy, or they might simply be receiving most of their care from a different provider. Patients with high fact counts are often very sick. This plugin displays the fact count distribution of one or more patient sets and compares it to the age distributions of those patient sets. This is important for identifying potential biases introduced by an i2b2 query and for generating matched control cohorts.</p>
-									<p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin(&#39;HealthcareSystemDynamicsTime&#39;);">Laboratory Tests</a> - This plugin demonstrates how Healthcare System Dynamics can aid in the interpretation of laboratory test results. For example, counterintuitively, patients with a normal WBC value at 4am have a lower three-year survival rate than patients with an abnormal WBC value at 4pm. The reason is because clinicians only order tests at 4am for patients who they think are sick. Often HSD dimensions of a laboratory test, such as the time of day or the day of the weeek the test was ordered is more predictive of patient outcomes than the value of the test result.</p>
+									<p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDFactCounts');">Fact Count</a> - Fact Count is the total number of data points (e.g., diagnoses, procedures, laboratory test results, etc.) a patient has. It is a measure of the amount of interaction patients have had with the healthcare system. Patients with low fact counts might be healthy, or they might simply be receiving most of their care from a different provider. Patients with high fact counts are often very sick. This plugin displays the fact count distribution of one or more patient sets and compares it to the age distributions of those patient sets. This is important for identifying potential biases introduced by an i2b2 query and for generating matched control cohorts.</p>
+									<p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDLabTests');">Laboratory Tests</a> - This plugin demonstrates how Healthcare System Dynamics can aid in the interpretation of laboratory test results. For example, counterintuitively, patients with a normal WBC value at 4am have a lower three-year survival rate than patients with an abnormal WBC value at 4pm. The reason is because clinicians only order tests at 4am for patients who they think are sick. Often HSD dimensions of a laboratory test, such as the time of day or the day of the weeek the test was ordered is more predictive of patient outcomes than the value of the test result.</p>
+                                    <p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDFactCountsSvr');">Fact Count (server-based)</a> - Version of Fact Count visualization that utilizes server-side plugin to calculate statistics.</p>
+                                    <p><a href="JavaScript:i2b2.PLUGINMGR.ctrlr.main.selectPlugin('HSDLabTestsSvr');">Laboratory Tests (server-based)</a> - Version of Laboratory Tests visualization that utilizes server-side plugin to calculate statistics.</p>
 								</div>
 							</div>
 						</div>
@@ -57,6 +60,5 @@
 				</div>
 			</div>
 		</div>
-	
-
-</body></html>
+	</body>
+</html>
